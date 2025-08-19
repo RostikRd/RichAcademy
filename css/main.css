@@ -1,0 +1,254 @@
+/* GROUP 4*/
+.group4 {
+    margin: 0;
+    padding: 0 70px;
+    color: #fff;
+    font-family: 'Montserrat';
+    text-align: left;
+}
+.hero__eyebrow {
+    width: 553px;
+    position: relative;
+    font-size: 18px;
+    display: inline-block;
+    font-family: Montserrat;
+    color: #17c2ec;
+    text-align: left;
+}
+.covid-19-vaccination {
+    margin: 0;
+}
+.vaccinationng1 {
+    margin: 0;
+    color: #17c2ec;
+    font-family: Montserrat;
+}
+.covid-19-vaccination-got-container {
+    width: 552px;
+    position: relative;
+    font-size: 40px;
+    font-weight: 800;
+    font-family: Montserrat;
+    margin-top: 10px;
+    text-align: left;
+    color: #fff;
+}
+.hero__desc{
+    max-width: 630px;
+    font-size: 16px;
+    line-height: 1.65;
+    color: rgba(255,255,255,.7);
+    margin-top: 40px;
+    font-family: Montserrat;
+    text-align: left;
+}
+/*==========*/
+
+
+
+
+
+
+/*GROUP 7*/
+.group7-parent nav ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 40px 0 0;
+    padding: 0px 70px;
+}
+.group7-parent nav ul li{ margin: 0; }
+
+.btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: .01em;
+    padding: 14px 24px;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    transition: transform .06s ease, background .2s ease, border-color .2s ease, filter .2s ease;
+    color: #fff;
+}
+
+.btn-primary{
+    position: relative;
+    background: #17c2ec;
+    box-shadow: 0 4px 14px rgba(0,0,0,.25);
+    overflow: hidden;
+}
+.btn-primary::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(140deg, rgba(255,255,255,.18) 0%, rgba(255,255,255,0) 45%);
+    pointer-events: none;
+}
+.btn-primary:hover{ filter: brightness(1.06); transform: translateY(-1px); }
+.btn-primary:active{ transform: translateY(0); }
+
+.btn-secondary{
+    background: rgba(196,196,196,0.10);
+    border-color: #17c2ec;
+}
+.btn-secondary:hover{
+    background: rgba(196,196,196,0.16);
+}
+
+.btn:focus-visible{
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(23,194,236,.35);
+}
+/*==========*/
+
+
+
+
+
+
+/*GROUP 16*/
+.group16-parent{
+    margin: 0;
+    padding: 70px;
+}
+/*GROUP 6*/
+.group6-sub{
+    display:flex;
+    align-items:center;
+    gap:16px;
+    margin-top:28px;
+    color:#fff;
+    margin-bottom: 0;
+    font-family:'Montserrat';
+}
+
+.group5-sub{
+    width:35px;
+    height:35px;
+    border-radius:12px;
+    background:rgba(196,196,196,0.10);
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+}
+
+.group5-sub figure{ margin:0; width:100%; height:100%; display:grid; place-items:center; }
+
+.group5-sub img{ width:25px; height:25px; display:block; }
+
+.schedule-your-vaccination{
+    font-weight:700;
+    font-size: 20px;
+    line-height:1.1;
+    white-space:nowrap;
+}
+/*==========*/
+/*GROUP 15*/
+.group15-sub{
+    position: relative;
+    margin-top: 24px;
+    padding: 20px 28px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 28px;
+    font-family: 'Montserrat';
+    color: #fff;
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+    min-height: 66px;
+}
+
+.rectangle5{ position:absolute; inset:0; border-radius:inherit; background: rgba(196,196,196,0.05); z-index:0; pointer-events:none; }
+.rectangle4{ position:absolute; left:0; right:0; bottom:0; top:12px; border-radius:inherit; background: rgba(196,196,196,0.10); z-index:0; pointer-events:none; }
+
+.group14-sub{
+    grid-column: 1/2;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 36px;
+}
+
+.group11-sub, .group12-sub, .group13-sub{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    min-width: 0;
+}
+
+.map-pin-sub, .calendar-sub, .shield-sub{
+    order: -1;
+    flex: 0 0 44px;
+    width: 44px; height: 44px;
+    border-radius: 10px;
+    background: rgba(196,196,196,0.10);
+    border: 1px solid rgba(23,194,236,0.35);
+    box-shadow: 0 6px 16px rgba(0,0,0,.15);
+    display: grid; place-items: center;
+    overflow: hidden;
+    cursor: default;
+    user-select: none;
+    position: relative;
+}
+.map-pin-sub::after, .calendar-sub::after, .shield-sub::after{
+    content:""; position:absolute; inset:0; border-radius:inherit;
+    pointer-events:none;
+}
+.map-pin-sub figure, .calendar-sub figure, .shield-sub figure{ margin:0; }
+.map-pin-sub img, .calendar-sub img, .shield-sub img{ width:22px; height:22px; display:block; }
+
+/* Текст біля іконки */
+.group10-sub, .group10-1-sub, .group10-2-sub{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    min-width: 0;
+}
+.location, .date, .vaccine-type{
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(255,255,255,.5);
+}
+.ikeja-lagos-nigeria, .february-2022, .mordena{
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* ===== Submit з обводкою ===== */
+.btn { display:inline-flex; align-items:center; justify-content:center; text-decoration:none; font-weight:700; }
+.btn-submit{
+    grid-column: 2/2;
+    justify-self: end;
+    z-index: 1;
+    background: #17c2ec;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 14px;
+    border: 2px solid rgba(23,194,236,0.9);
+    box-shadow: 0 4px 14px rgba(0,0,0,.25);
+    position: relative; overflow: hidden;
+}
+.btn-submit::after{
+    content:""; position:absolute; inset:0;
+    background: linear-gradient(140deg, rgba(255,255,255,.18) 0%, rgba(255,255,255,0) 45%);
+    pointer-events:none;
+}
+.btn-submit:hover{ filter: brightness(1.06); transform: translateY(-1px); transition: .15s ease; }
+.btn-submit:active{ transform: translateY(0); }
+/*==========*/
+/*GROUP 22*/
+
+
+

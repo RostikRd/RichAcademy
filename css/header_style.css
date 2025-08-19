@@ -1,0 +1,92 @@
+/* === ХЕДЕР === */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 41px;
+    padding-bottom: 60px;
+    padding-left: 70px;
+    padding-right: 71px;
+    font-family: Montserrat;
+}
+
+/* === ЛОГОТИП === */
+.vaccinationng-parent {
+    position: relative;
+}
+
+.vaccinationng {
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 6px;
+}
+
+.group-child {
+    position: static;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 3px;
+    background-color: #17c2ec;
+    border-radius: 2px;
+}
+
+/* === НАВІГАЦІЯ === */
+nav ul {
+    display: flex;
+    gap: 35px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: #bbb;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #fff;
+}
+
+nav ul li a.active {
+    font-weight: 700;
+    color: #fff;
+    position: relative;
+}
+
+/* Точка під активним пунктом */
+nav ul li a.active::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6px;
+    height: 6px;
+    background: #17c2ec;
+    border-radius: 50%;
+}
+
+/* === КНОПКА === */
+.check-status {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 12px;
+    color: #17c2ec;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.check-status:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
