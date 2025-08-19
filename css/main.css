@@ -1,7 +1,8 @@
 /* GROUP 4*/
-.group4 {
+.hero-left{
     margin: 0;
-    padding: 0 70px;
+    padding-left: 70px;
+    padding-right: 70px;
     color: #fff;
     font-family: 'Montserrat';
     text-align: left;
@@ -43,6 +44,195 @@
     text-align: left;
 }
 /*==========*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.group4{
+    display:flex; align-items:center; justify-content:space-between;
+    gap:64px; margin:0 auto; padding:0 70px;
+}
+
+
+.group4 > .hero-left{
+    flex:1 1 640px; min-width:0; padding:0;
+    display:flex; flex-direction:column; gap:24px;
+}
+
+
+.hero-cta ul{
+    display:flex; gap:20px; list-style:none; padding:0; margin:0;
+}
+.hero-cta li{ display:inline-flex; }
+.hero-cta .btn{ display:inline-flex; align-items:center; justify-content:center; }
+
+.group4{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 64px;
+    margin: 0 auto;
+}
+
+.group4 > .hero-left{ flex: 1 1 640px; min-width: 0; padding: 0; }
+
+/* ===== ПРАВА колонка з фото */
+.group22-parent{
+    position: relative;
+    flex: 0 0 clamp(420px, 38vw, 260px);
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* саме фото */
+.group22-parent > .picture{
+    width: 100%;
+    display: flex;
+    align-items: center; justify-content: center;
+}
+.group22-parent > .picture img{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 28px;
+    object-fit: contain;
+}
+
+.group17-sub, .group18-sub, .group21-sub{ position: absolute; z-index: 2; }
+
+
+.group17-sub{
+    left: -24px;
+    top: 50%; transform: translateY(-50%);
+    width: 96px; height: 96px;
+}
+.group17-sub .group-child2{
+    position:absolute; inset:0;
+    background:#fff; border-radius:20px;
+    box-shadow:0 4px 12px rgba(0,0,0,.25);
+}
+.group17-sub img{
+    position:absolute; inset:0; margin:auto;
+    width:70%; height:70%; object-fit:contain;
+}
+
+.group18-sub{
+    right: -24px; top: 38%;
+    width: 96px; height: 96px;
+}
+.group18-sub .group-child1{
+    position:absolute; inset:0;
+    background:#fff; border-radius:20px;
+    box-shadow:0 4px 12px rgba(0,0,0,.25);
+}
+.group18-sub img{
+    position:absolute; inset:0; margin:auto;
+    width:72%; height:72%; object-fit:contain;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Фото всередині правої колонки — контроль координат */
+.group22-parent{ position: relative; }
+.group22-parent .picture{   overflow: visible; }
+.group22-parent .picture img{
+    width: 100%; height: auto; display: block; border-radius: 28px;
+}
+
+/* --- БЕЙДЖ 20+ Specialists: низ-ліво від краю фото --- */
+.group22-parent .group21-sub{
+    position: absolute;
+    left: -50px;
+    bottom: -30px;
+    right: auto !important;
+    transform: none !important;
+    z-index: 3;
+
+    display: flex; align-items: center; gap: 12px;
+    padding: 8px 12px; min-height: 56px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    background-color: rgba(196, 196, 196, 0.2);
+    color: #fff;
+}
+
+/* аватарки з перекриттям */
+.group22-parent .group20-child{ position: relative; width: 116px; height: 40px; }
+.group22-parent .group20-child figure{ margin: 0; }
+.group22-parent .group20-child figure img{
+    position: absolute; top: 0;
+    width: 40px; height: 40px; object-fit: cover; border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,.25);
+    border: 2px solid rgba(255,255,255,.7);
+}
+.group22-parent .group20-child figure img:nth-child(1){ left: 0;   }
+.group22-parent .group20-child figure img:nth-child(2){ left: 36px;}
+.group22-parent .group20-child figure img:nth-child(3){ left: 72px;}
+
+/* Текст у бейджі: "20+" над "Specialists" */
+.group22-parent .group19-sub{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    line-height: 1;
+    margin-left: 4px;
+    white-space: nowrap;
+}
+
+.group22-parent .group19-sub .b{
+    font-weight: 800;
+    font-size: 16px;
+    font-family: 'Montserrat';
+    color: #fff;
+}
+
+.group22-parent .group19-sub .specialists{
+    font-weight: 700;
+    font-size: 14px;
+    color: #17c2ec;
+    font-family: 'Montserrat';
+    margin-top: 2px;
+}
+
+
+
+
+
+
 
 
 
@@ -114,7 +304,8 @@
 /*GROUP 16*/
 .group16-parent{
     margin: 0;
-    padding: 70px;
+    padding-left: 70px;
+    padding-right: 70px;
 }
 /*GROUP 6*/
 .group6-sub{
@@ -154,7 +345,7 @@
 .group15-sub{
     position: relative;
     margin-top: 24px;
-    padding: 20px 28px;
+    padding: 29px 28px;
     display: grid;
     grid-template-columns: 1fr auto;
     align-items: center;
@@ -227,7 +418,7 @@
 }
 
 /* ===== Submit з обводкою ===== */
-.btn { display:inline-flex; align-items:center; justify-content:center; text-decoration:none; font-weight:700; }
+.btn { display:inline-flex; align-items:center; justify-content:center; font-family: 'Montserrat'; font-weight:700; }
 .btn-submit{
     grid-column: 2/2;
     justify-self: end;
@@ -247,8 +438,7 @@
 }
 .btn-submit:hover{ filter: brightness(1.06); transform: translateY(-1px); transition: .15s ease; }
 .btn-submit:active{ transform: translateY(0); }
-/*==========*/
-/*GROUP 22*/
+
 
 
 
