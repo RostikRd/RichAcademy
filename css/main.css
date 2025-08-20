@@ -1,32 +1,50 @@
-/* GROUP 4*/
-.hero-left{
-    margin: 0;
-    padding-left: 70px;
-    padding-right: 70px;
-    color: #fff;
-    font-family: 'Montserrat';
-    text-align: left;
+
+.group4 {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 64px;
+    margin: 0 auto;
+    padding: 0 70px;
 }
+
+.hero-left {
+    flex: 1 1 640px;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: "Montserrat";
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
 .hero__eyebrow {
     width: 553px;
-    position: relative;
     font-size: 18px;
-    display: inline-block;
     font-family: Montserrat;
     color: #17c2ec;
     text-align: left;
 }
+
 .covid-19-vaccination {
     margin: 0;
+    color: #fff;
+    font-family: Montserrat;
 }
 .vaccinationng1 {
+    width: 552px;
+    font-size: 40px;
+    font-weight: 800;
     margin: 0;
     color: #17c2ec;
     font-family: Montserrat;
 }
+
 .covid-19-vaccination-got-container {
     width: 552px;
-    position: relative;
     font-size: 40px;
     font-weight: 800;
     font-family: Montserrat;
@@ -34,65 +52,18 @@
     text-align: left;
     color: #fff;
 }
-.hero__desc{
+
+.hero__desc {
     max-width: 630px;
     font-size: 16px;
     line-height: 1.65;
-    color: rgba(255,255,255,.7);
+    color: rgba(255, 255, 255, 0.7);
     margin-top: 40px;
     font-family: Montserrat;
     text-align: left;
 }
-/*==========*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.group4{
-    display:flex; align-items:center; justify-content:space-between;
-    gap:64px; margin:0 auto; padding:0 70px;
-}
-
-
-.group4 > .hero-left{
-    flex:1 1 640px; min-width:0; padding:0;
-    display:flex; flex-direction:column; gap:24px;
-}
-
-
-.hero-cta ul{
-    display:flex; gap:20px; list-style:none; padding:0; margin:0;
-}
-.hero-cta li{ display:inline-flex; }
-.hero-cta .btn{ display:inline-flex; align-items:center; justify-content:center; }
-
-.group4{
-    display: flex;
-    align-items: start;
-    justify-content: space-between;
-    gap: 64px;
-    margin: 0 auto;
-}
-
-.group4 > .hero-left{ flex: 1 1 640px; min-width: 0; padding: 0; }
-
-/* ===== ПРАВА колонка з фото */
-.group22-parent{
+.group22-parent {
     position: relative;
     flex: 0 0 clamp(420px, 38vw, 260px);
     align-self: center;
@@ -101,13 +72,15 @@
     justify-content: center;
 }
 
-/* саме фото */
-.group22-parent > .picture{
+.group22-parent > .picture {
     width: 100%;
     display: flex;
-    align-items: center; justify-content: center;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
 }
-.group22-parent > .picture img{
+
+.group22-parent > .picture img {
     width: 100%;
     height: auto;
     display: block;
@@ -115,95 +88,93 @@
     object-fit: contain;
 }
 
-.group17-sub, .group18-sub, .group21-sub{ position: absolute; z-index: 2; }
 
+.group17-sub,
+.group18-sub {
+    position: absolute;
+    z-index: 2;
+    width: 96px;
+    height: 96px;
+}
 
-.group17-sub{
+.group17-sub {
     left: -24px;
-    top: 50%; transform: translateY(-50%);
-    width: 96px; height: 96px;
-}
-.group17-sub .group-child2{
-    position:absolute; inset:0;
-    background:#fff; border-radius:20px;
-    box-shadow:0 4px 12px rgba(0,0,0,.25);
-}
-.group17-sub img{
-    position:absolute; inset:0; margin:auto;
-    width:70%; height:70%; object-fit:contain;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-.group18-sub{
-    right: -24px; top: 38%;
-    width: 96px; height: 96px;
-}
-.group18-sub .group-child1{
-    position:absolute; inset:0;
-    background:#fff; border-radius:20px;
-    box-shadow:0 4px 12px rgba(0,0,0,.25);
-}
-.group18-sub img{
-    position:absolute; inset:0; margin:auto;
-    width:72%; height:72%; object-fit:contain;
+.group18-sub {
+    right: -24px;
+    top: 38%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Фото всередині правої колонки — контроль координат */
-.group22-parent{ position: relative; }
-.group22-parent .picture{   overflow: visible; }
-.group22-parent .picture img{
-    width: 100%; height: auto; display: block; border-radius: 28px;
+.group17-sub .group-child2,
+.group18-sub .group-child1 {
+    position: absolute;
+    inset: 0;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
-/* --- БЕЙДЖ 20+ Specialists: низ-ліво від краю фото --- */
-.group22-parent .group21-sub{
+.group17-sub img,
+.group18-sub img {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+}
+
+.group22-parent .group21-sub {
     position: absolute;
     left: -50px;
     bottom: -30px;
-    right: auto !important;
-    transform: none !important;
     z-index: 3;
-
-    display: flex; align-items: center; gap: 12px;
-    padding: 8px 12px; min-height: 56px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 12px;
+    min-height: 56px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     background-color: rgba(196, 196, 196, 0.2);
     color: #fff;
 }
 
-/* аватарки з перекриттям */
-.group22-parent .group20-child{ position: relative; width: 116px; height: 40px; }
-.group22-parent .group20-child figure{ margin: 0; }
-.group22-parent .group20-child figure img{
-    position: absolute; top: 0;
-    width: 40px; height: 40px; object-fit: cover; border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,.25);
-    border: 2px solid rgba(255,255,255,.7);
+.group22-parent .group20-child {
+    position: relative;
+    width: 116px;
+    height: 40px;
 }
-.group22-parent .group20-child figure img:nth-child(1){ left: 0;   }
-.group22-parent .group20-child figure img:nth-child(2){ left: 36px;}
-.group22-parent .group20-child figure img:nth-child(3){ left: 72px;}
 
-/* Текст у бейджі: "20+" над "Specialists" */
-.group22-parent .group19-sub{
+.group22-parent .group20-child figure {
+    margin: 0;
+}
+
+.group22-parent .group20-child figure img {
+    position: absolute;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    border: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+.group22-parent .group20-child figure img:nth-child(1) {
+    left: 0;
+}
+.group22-parent .group20-child figure img:nth-child(2) {
+    left: 36px;
+}
+.group22-parent .group20-child figure img:nth-child(3) {
+    left: 72px;
+}
+
+.group22-parent .group19-sub {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -213,48 +184,57 @@
     white-space: nowrap;
 }
 
-.group22-parent .group19-sub .b{
+.group22-parent .group19-sub .b {
     font-weight: 800;
     font-size: 16px;
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     color: #fff;
 }
 
-.group22-parent .group19-sub .specialists{
+.group22-parent .group19-sub .specialists {
     font-weight: 700;
     font-size: 14px;
     color: #17c2ec;
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     margin-top: 2px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-/*GROUP 7*/
-.group7-parent nav ul{
+.group7-parent nav ul {
     display: flex;
     gap: 20px;
     list-style: none;
     margin: 40px 0 0;
     padding: 0px 70px;
 }
-.group7-parent nav ul li{ margin: 0; }
 
-.btn{
+.group7-parent nav ul li {
+    margin: 0;
+}
+
+.hero-cta ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hero-cta li {
+    display: inline-flex;
+}
+
+.hero-cta .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-weight: 700;
     font-size: 18px;
     line-height: 1;
@@ -266,83 +246,124 @@
     color: #fff;
 }
 
-.btn-primary{
+.btn-primary {
     position: relative;
     background: #17c2ec;
-    box-shadow: 0 4px 14px rgba(0,0,0,.25);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
     overflow: hidden;
 }
-.btn-primary::after{
+
+.btn-primary::after {
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(140deg, rgba(255,255,255,.18) 0%, rgba(255,255,255,0) 45%);
+    background: linear-gradient(140deg, rgba(255, 255, 255, 0.18) 0%, rgba(255, 255, 255, 0) 45%);
     pointer-events: none;
 }
-.btn-primary:hover{ filter: brightness(1.06); transform: translateY(-1px); }
-.btn-primary:active{ transform: translateY(0); }
 
-.btn-secondary{
-    background: rgba(196,196,196,0.10);
+.btn-primary:hover {
+    filter: brightness(1.06);
+    transform: translateY(-1px);
+}
+
+.btn-primary:active {
+    transform: translateY(0);
+}
+
+.btn-secondary {
+    background: rgba(196, 196, 196, 0.1);
     border-color: #17c2ec;
 }
-.btn-secondary:hover{
-    background: rgba(196,196,196,0.16);
+
+.btn-secondary:hover {
+    background: rgba(196, 196, 196, 0.16);
 }
 
-.btn:focus-visible{
+.btn:focus-visible {
     outline: none;
-    box-shadow: 0 0 0 3px rgba(23,194,236,.35);
+    box-shadow: 0 0 0 3px rgba(23, 194, 236, 0.35);
 }
-/*==========*/
 
+.btn-submit {
+    background: #17c2ec;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 14px;
+    border: 2px solid rgba(23, 194, 236, 0.9);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+    position: relative;
+    overflow: hidden;
+}
 
+.btn-submit::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(140deg, rgba(255, 255, 255, 0.18) 0%, rgba(255, 255, 255, 0) 45%);
+    pointer-events: none;
+}
 
+.btn-submit:hover {
+    filter: brightness(1.06);
+    transform: translateY(-1px);
+    transition: .15s ease;
+}
 
+.btn-submit:active {
+    transform: translateY(0);
+}
 
-
-/*GROUP 16*/
-.group16-parent{
+.group16-parent {
     margin: 0;
     padding-left: 70px;
     padding-right: 70px;
 }
-/*GROUP 6*/
-.group6-sub{
-    display:flex;
-    align-items:center;
-    gap:16px;
-    margin-top:28px;
-    color:#fff;
+
+
+.group6-sub {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 28px;
     margin-bottom: 0;
-    font-family:'Montserrat';
+    color: #fff;
+    font-family: "Montserrat";
 }
 
-.group5-sub{
-    width:35px;
-    height:35px;
-    border-radius:12px;
-    background:rgba(196,196,196,0.10);
-    position:relative;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    overflow:hidden;
+.group5-sub {
+    width: 35px;
+    height: 35px;
+    border-radius: 12px;
+    background: rgba(196, 196, 196, 0.1);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
-.group5-sub figure{ margin:0; width:100%; height:100%; display:grid; place-items:center; }
+.group5-sub figure {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
 
-.group5-sub img{ width:25px; height:25px; display:block; }
+.group5-sub img {
+    width: 25px;
+    height: 25px;
+    display: block;
+}
 
-.schedule-your-vaccination{
-    font-weight:700;
+.schedule-your-vaccination {
+    font-weight: 700;
     font-size: 20px;
-    line-height:1.1;
-    white-space:nowrap;
+    line-height: 1.1;
+    white-space: nowrap;
 }
-/*==========*/
-/*GROUP 15*/
-.group15-sub{
+
+.group15-sub {
     position: relative;
     margin-top: 24px;
     padding: 29px 28px;
@@ -350,65 +371,113 @@
     grid-template-columns: 1fr auto;
     align-items: center;
     gap: 28px;
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     color: #fff;
     border-radius: 20px 20px 0 0;
     overflow: hidden;
     min-height: 66px;
 }
+.rectangle5 {
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: rgba(196, 196, 196, 0.05);
+    z-index: 0;
+    pointer-events: none;
+}
 
-.rectangle5{ position:absolute; inset:0; border-radius:inherit; background: rgba(196,196,196,0.05); z-index:0; pointer-events:none; }
-.rectangle4{ position:absolute; left:0; right:0; bottom:0; top:12px; border-radius:inherit; background: rgba(196,196,196,0.10); z-index:0; pointer-events:none; }
+.rectangle4 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 12px;
+    border-radius: inherit;
+    background: rgba(196, 196, 196, 0.1);
+    z-index: 0;
+    pointer-events: none;
+}
 
-.group14-sub{
-    grid-column: 1/2;
+.group14-sub {
+    grid-column: 1 / 2;
     z-index: 1;
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 36px;
 }
 
-.group11-sub, .group12-sub, .group13-sub{
+.group11-sub,
+.group12-sub,
+.group13-sub {
     display: flex;
     align-items: center;
     gap: 14px;
     min-width: 0;
 }
 
-.map-pin-sub, .calendar-sub, .shield-sub{
+.map-pin-sub,
+.calendar-sub,
+.shield-sub {
     order: -1;
     flex: 0 0 44px;
-    width: 44px; height: 44px;
+    width: 44px;
+    height: 44px;
     border-radius: 10px;
-    background: rgba(196,196,196,0.10);
-    border: 1px solid rgba(23,194,236,0.35);
-    box-shadow: 0 6px 16px rgba(0,0,0,.15);
-    display: grid; place-items: center;
+    background: rgba(196, 196, 196, 0.1);
+    border: 1px solid rgba(23, 194, 236, 0.35);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    display: grid;
+    place-items: center;
     overflow: hidden;
     cursor: default;
     user-select: none;
     position: relative;
 }
-.map-pin-sub::after, .calendar-sub::after, .shield-sub::after{
-    content:""; position:absolute; inset:0; border-radius:inherit;
-    pointer-events:none;
-}
-.map-pin-sub figure, .calendar-sub figure, .shield-sub figure{ margin:0; }
-.map-pin-sub img, .calendar-sub img, .shield-sub img{ width:22px; height:22px; display:block; }
 
-/* Текст біля іконки */
-.group10-sub, .group10-1-sub, .group10-2-sub{
+.map-pin-sub::after,
+.calendar-sub::after,
+.shield-sub::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+}
+
+.map-pin-sub figure,
+.calendar-sub figure,
+.shield-sub figure {
+    margin: 0;
+}
+
+.map-pin-sub img,
+.calendar-sub img,
+.shield-sub img {
+    width: 22px;
+    height: 22px;
+    display: block;
+}
+
+.group10-sub,
+.group10-1-sub,
+.group10-2-sub {
     display: flex;
     flex-direction: column;
     gap: 6px;
     min-width: 0;
 }
-.location, .date, .vaccine-type{
+
+.location,
+.date,
+.vaccine-type {
     font-size: 16px;
     font-weight: 600;
-    color: rgba(255,255,255,.5);
+    color: rgba(255, 255, 255, 0.5);
 }
-.ikeja-lagos-nigeria, .february-2022, .mordena{
+
+.ikeja-lagos-nigeria,
+.february-2022,
+.mordena {
     font-size: 18px;
     font-weight: 700;
     color: #fff;
@@ -417,28 +486,8 @@
     text-overflow: ellipsis;
 }
 
-/* ===== Submit з обводкою ===== */
-.btn { display:inline-flex; align-items:center; justify-content:center; font-family: 'Montserrat'; font-weight:700; }
-.btn-submit{
-    grid-column: 2/2;
+.btn-submit {
+    grid-column: 2 / 2;
     justify-self: end;
     z-index: 1;
-    background: #17c2ec;
-    color: #fff;
-    padding: 12px 24px;
-    border-radius: 14px;
-    border: 2px solid rgba(23,194,236,0.9);
-    box-shadow: 0 4px 14px rgba(0,0,0,.25);
-    position: relative; overflow: hidden;
 }
-.btn-submit::after{
-    content:""; position:absolute; inset:0;
-    background: linear-gradient(140deg, rgba(255,255,255,.18) 0%, rgba(255,255,255,0) 45%);
-    pointer-events:none;
-}
-.btn-submit:hover{ filter: brightness(1.06); transform: translateY(-1px); transition: .15s ease; }
-.btn-submit:active{ transform: translateY(0); }
-
-
-
-
