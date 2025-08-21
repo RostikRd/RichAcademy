@@ -1,11 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="../todo_list/style.css">
-    <title>Title</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" />
+    <link rel="stylesheet" href="style.css">
+    <title>To-Do — Today</title>
 </head>
 <body>
+<main class="app" role="main">
+    <!-- Верхня частина сторінки -->
+    <header class="app__header">
+        <h1 class="app__title">Today</h1>
+    </header>
 
+    <!-- Блок категорії: DESIGN -->
+    <section class="section" aria-labelledby="cat-design">
+        <h2 id="cat-design" class="section__title">Design</h2>
+        <!-- place for adding task-->
+    </section>
+
+    <!-- Блок категорії: PERSONAL -->
+    <section class="section" aria-labelledby="cat-personal">
+        <h2 id="cat-personal" class="section__title">Personal</h2>
+        <!-- place for adding task-->
+    </section>
+
+    <!-- Блок категорії: HOUSE -->
+    <section class="section" aria-labelledby="cat-house">
+        <h2 id="cat-house" class="section__title">House</h2>
+        <!-- place for adding task-->
+    </section>
+
+    <!-- Нижня панель додавання задачі -->
+    <form class="add-form" autocomplete="off">
+        <input
+                id="new-task"
+                class="add-form__input"
+                type="text"
+                placeholder="Write a task..."
+                inputmode="text"
+                aria-label="Write a task"
+        />
+        <button class="add-form__btn" type="submit" aria-label="Add task">
+            Add
+        </button>
+    </form>
+</main>
 </body>
 </html>
