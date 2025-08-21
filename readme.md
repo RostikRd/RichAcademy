@@ -1,1 +1,1 @@
-[todolistapp](RichAcademy/blob/todo_list/todo_list/index.html)
+[todolistapp](todo_list/index.html)
