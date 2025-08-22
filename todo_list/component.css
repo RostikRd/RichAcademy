@@ -1,0 +1,159 @@
+/* Лівий "кружок"-чекбокс*/
+.frame-child {
+    width: 24px;
+    height: 24px;
+    border: 2px solid #9f9f9f;
+    border-radius: 5.99px;
+    box-sizing: border-box;
+}
+
+.my-first-task {
+    position: relative;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.frame-parent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+}
+
+
+/* Контейнер ручки */
+.rectangle-parent {
+    position: relative;
+    width: 10px;
+    height: 18px;
+    cursor: grab;
+}
+
+.frame-item,
+.frame-inner,
+.rectangle-div,
+.frame-child1,
+.frame-child2,
+.frame-child3 {
+    position: absolute;
+    background-color: #d9d9d9;
+    width: 3px;
+    height: 3px;
+}
+
+.frame-item {
+    top: 0.5px;
+    left: 0px;
+}
+
+.frame-inner {
+    top: 0.5px;
+    left: 7px;
+}
+
+.rectangle-div {
+    top: 7.5px;
+    left: 0px;
+}
+
+.frame-child1 {
+    top: 7.5px;
+    left: 7px;
+}
+
+.frame-child2 {
+    top: 14.5px;
+    left: 0px;
+}
+
+.frame-child3 {
+    top: 14.5px;
+    left: 7px;
+}
+
+/*обгортка*/
+.property-1default {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 56px;
+    padding: 16px;
+    gap: 0;
+
+    border-radius: 12px;
+    background-color: #F3EFEE;
+    box-sizing: border-box;
+
+    text-align: left;
+    font-size: 18px;
+    color: #121212;
+    font-family: Inter;
+}
+
+
+/*Список задач */
+.todo {
+    margin: 0;
+    list-style: none;
+    display: grid;
+    gap: 8px;
+    min-height: 56px;
+    padding: 6px 0;
+}
+
+.todo.empty {
+    outline: 1.5px dashed #e6e0dc;
+    border-radius: 12px;
+}
+
+.todo.empty.dropping {
+    background: #fbf6f4;
+}
+
+
+/* Стилі для Drag and drop*/
+
+.task.dragging .property-1default {
+    opacity: .6;
+    transform: scale(.995);
+}
+
+.task.drop-target::before {
+    content: "";
+    display: block;
+    height: 4px;
+    margin: -6px 0 2px;
+    border-radius: 999px;
+    background: #d0d0d0;
+}
+
+.task.dragging .rectangle-parent {
+    cursor: grabbing;
+}
+
+
+/* Кнопка - виконано */
+.task.done .my-first-task {
+    color: #9f9f9f;
+}
+
+.task.done .frame-child {
+    position: relative;
+    background: #9f9f9f;
+    border-color: #9f9f9f;
+}
+
+.task.done .frame-child::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 16px 16px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 12 10 16 18 8'/%3E%3C/svg%3E");
+}

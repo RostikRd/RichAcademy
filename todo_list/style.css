@@ -1,3 +1,4 @@
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -10,33 +11,34 @@ body {
     margin: 0;
     font-family: Inter;
     background: #f1e9e6;
-    display: block;
-    min-height: 100dvh;
-    overflow: hidden;                /* <- забороняємо прокрутку вікна */
     display: grid;
-    place-items: start center;       /* центруємо «картку» по центру */
+    place-items: start center;
+    min-height: 100dvh;
+    overflow: hidden;
     padding: 12px 0;
 }
 
 
+/*app*/
+
 .app {
     width: min(100vw, 390px);
-    height: calc(100dvh - 24px);     /* 24px = вертикальний padding body */
-    border-radius: 12px;
-    background: #fbf6f4;
-    box-shadow: 0 2px 10px rgba(0,0,0,.05);
-
-    position: relative;              /* <- база для absolute-панелі */
-    overflow: hidden;                /* <- жодної прокрутки всередині */
+    height: calc(100dvh - 24px);
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-gutter: stable both-edges;
     display: flex;
     flex-direction: column;
-
-    /* резерв місця під панель, щоб контент її не «підлазив» */
-    padding-bottom: calc(56px + 24px + env(safe-area-inset-bottom));
-    /* 56px — висота панелі, 24px — відступи */
+    border-radius: 12px;
+    background: #fbf6f4;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .05);
+    padding-bottom: env(safe-area-inset-bottom);
+    position: relative;
 }
 
-/* Шапка */
+
+/*Today*/
+
 .app__header {
     padding: 20px 24px 0;
 }
@@ -48,7 +50,9 @@ body {
     line-height: 1.1;
 }
 
-/* Секції/списки */
+
+/* section*/
+
 .section {
     padding: 10px 16px;
 }
@@ -60,6 +64,10 @@ body {
     font-weight: 600;
     text-transform: uppercase;
     color: #d1a28b;
+}
+
+.section:last-of-type {
+    padding-bottom: 88px;
 }
 
 .todo-list {
@@ -96,19 +104,21 @@ body {
     margin-top: 4px;
 }
 
-/* Нижня панель додавання */
+
+/* panel bar */
+
 .add-form {
-    position: absolute;              /* <- більше НЕ fixed і НЕ sticky */
-    left: 16px;
-    right: 16px;
-    bottom: max(12px, env(safe-area-inset-bottom));
+    margin-top: auto;
+    position: sticky;
+    bottom: 0;
     z-index: 2;
+
+    padding: 12px 16px max(12px, env(safe-area-inset-bottom));
+    background: #fbf6f4;
 
     display: grid;
     grid-template-columns: 1fr auto;
     gap: 12px;
-    padding: 12px 0;                 /* внутрішні відступи самої панелі */
-    background: transparent;
 }
 
 .add-form__input {

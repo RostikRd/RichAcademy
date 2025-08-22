@@ -1,15 +1,17 @@
 <!doctype html>
 <html lang="uk">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" />
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap"/>
     <link rel="stylesheet" href="style.css">
-    <title>To-Do — Today</title>
+    <link rel="stylesheet" href="component.css">
+    <title>ToDoList</title>
+    <script src="./logic.js" defer></script>
 </head>
 <body>
 <main class="app" role="main">
-    <!-- Верхня частина сторінки -->
+
     <header class="app__header">
         <h1 class="app__title">Today</h1>
     </header>
@@ -17,22 +19,74 @@
     <!-- Блок категорії: DESIGN -->
     <section class="section" aria-labelledby="cat-design">
         <h2 id="cat-design" class="section__title">Design</h2>
-        <!-- place for adding task-->
+        <!------------------------------>
+        <ul class="todo" aria-describedby="cat-design">
+            <li class="task" data-id="1">
+                <div class="property-1default" draggable="true">
+                    <div class="frame-parent">
+                        <div class="frame-child" aria-hidden="true"></div>
+                        <div class="my-first-task">First Task</div>
+                    </div>
+                    <div class="rectangle-parent" aria-label="Перетягнути, щоб змінити порядок" role="button" tabindex="0">
+                        <div class="frame-item"></div><div class="frame-inner"></div>
+                        <div class="rectangle-div"></div><div class="frame-child1"></div>
+                        <div class="frame-child2"></div><div class="frame-child3"></div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <!------------------------------>
     </section>
 
     <!-- Блок категорії: PERSONAL -->
     <section class="section" aria-labelledby="cat-personal">
         <h2 id="cat-personal" class="section__title">Personal</h2>
-        <!-- place for adding task-->
+        <!------------------------------>
+        <ul class="todo" aria-describedby="cat-personal">
+            <li class="task" data-id="3">
+                <div class="property-1default" draggable="true">
+                    <div class="frame-parent">
+                        <div class="frame-child" aria-hidden="true"></div>
+                        <div class="my-first-task">Second Task</div>
+                    </div>
+                    <div class="rectangle-parent" aria-label="Перетягнути, щоб змінити порядок" role="button" tabindex="0">
+                        <div class="frame-item"></div><div class="frame-inner"></div>
+                        <div class="rectangle-div"></div><div class="frame-child1"></div>
+                        <div class="frame-child2"></div><div class="frame-child3"></div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <!------------------------------>
     </section>
 
     <!-- Блок категорії: HOUSE -->
     <section class="section" aria-labelledby="cat-house">
         <h2 id="cat-house" class="section__title">House</h2>
-        <!-- place for adding task-->
+        <!------------------------------>
+        <ul class="todo" aria-describedby="cat-house">
+            <li class="task" data-id="4">
+                <div class="property-1default" draggable="true">
+                    <div class="frame-parent">
+                        <div class="frame-child" aria-hidden="true"></div>
+                        <div class="my-first-task">Third Task</div>
+                    </div>
+                    <div class="rectangle-parent" aria-label="Перетягнути, щоб змінити порядок" role="button"
+                         tabindex="0">
+                        <div class="frame-item"></div>
+                        <div class="frame-inner"></div>
+                        <div class="rectangle-div"></div>
+                        <div class="frame-child1"></div>
+                        <div class="frame-child2"></div>
+                        <div class="frame-child3"></div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <!------------------------------>
     </section>
 
-    <!-- Нижня панель додавання задачі -->
+    <!-- Нижня панель -->
     <form class="add-form" autocomplete="off">
         <input
                 id="new-task"
